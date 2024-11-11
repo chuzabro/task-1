@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #main{
+            background: rgb(27, 24, 24);
+        }
+        #flexbox{
+            display: flex;
+            flex-direction: column;
+        }
+        #imagediv img{
+            max-width: 50%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="main" class="flex flex-col lg:flex-row bg-background p-8">
+        <div id="flexbox" class="flex-1">
+          <div class="text-lg text-muted-foreground">LOGO</div>
+          <nav class="mt-4 space-x-4">
+            <a class="text-primary hover:text-primary-foreground" href="">Home</a>
+            <a class="text-primary hover:text-primary-foreground" href="#">About Us</a>
+            <a class="text-primary hover:text-primary-foreground" href="#">Services</a>
+          </nav>
+          <h1 class="mt-8 text-4xl font-bold text-foreground">Cloud Engineers Enterprises</h1>
+          <p class="mt-4 text-muted-foreground">
+            Cloud Engineers Enterprises specializes in providing cutting-edge cloud solutions tailored to meet the needs of businesses. With expertise in cloud architecture, infrastructure management, and
+            seamless migration, we empower organizations to enhance scalability, security, and performance.
+          </p>
+          <div class="mt-6 space-x-4">
+            <a href="#" class="bg-secondary text-secondary-foreground px-4 py-2 rounded-lg hover:bg-secondary/80">Learn More</a>
+            <a href="#" class="bg-accent text-accent-foreground px-4 py-2 rounded-lg hover:bg-accent/80">Get Started</a>
+          </div>
+        </div>
+        <div id="imagediv" class="flex-1 flex justify-center items-center mt-8 lg:mt-0">
+          <img aria-hidden="true" alt="cloud services illustration" src="./images/pexels-masoodaslami-29187003.jpg" />
+        </div>
+      </div>
+</body>
+</html>
